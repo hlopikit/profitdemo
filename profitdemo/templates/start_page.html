@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Демо приложение</title>
+</head>
+<body>
+
+<h1> Вот юзер {{ user }} {{ user.last_name }}</h1>
+{% for d in deals %}
+    {{ d.id }} сделка {{ d.TITLE }} {{ d.OPPORTUNITY }} товаров: {{ d.items_count }}<br>
+{% endfor %}
+
+<br>
+Курсы валют будут автоматически публиковаться в живую ленту.
+</body>
+</html>
